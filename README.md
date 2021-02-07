@@ -1,6 +1,6 @@
 # Docker Compose, Swarm, Engine, Community Edition #
 
-Whereas the utilization of *docker run* can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be clear, Docker Compose can be more efficient than using *docker run*, particularly when there might be a plethora of containers to start up.
+Whereas the utilization of *docker run* can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be axiomatic, Docker Compose can be more efficient than using *docker run*, particularly when there might be a plethora of containers to start up.
 
 In contemporary times, monolithic applications have been restructured as microservices applications, wherein each microservice has a different logical function for the involved application. The microservices reside in containers (packages that include everything needed to run). Historically, Docker and Kubernetes have been the more popular of the container orchestration frameworks to handle multiple containers.
 
