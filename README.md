@@ -2,13 +2,11 @@
 
 Whereas the utilization of *docker run* can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be axiomatic, Docker Compose can be more efficient than using *docker run*, particularly when there might be a plethora of containers to start up.
 
-In contemporary times, monolithic applications have been restructured as microservices applications, wherein each microservice has a different logical function for the involved application. The microservices reside in containers (packages that include everything needed to run). Historically, Docker and Kubernetes have been the more popular of the container orchestration frameworks to handle multiple containers.
+In contemporary times, monolithic applications have been restructured as microservices applications, wherein each microservice has a different logical function for the involved application. The microservices reside in containers (packages that include everything needed to run). Historically, Docker and Kubernetes have been the more popular of the container orchestration frameworks to handle multiple containers. Also, historically, Docker was a set of components. Among these, there were two core tool components: (1) Docker Compose, and (2) Docker Swarm.
 
-Docker is a set of components. Among these, there are two core tool components: (1) Docker Compose, and (2) Docker Swarm.
+Docker Compose was the configuration component of the Docker ecosystem. The core function centers upon configuring and managing a group of related containers.
 
-Docker Compose is the configuration component of the Docker ecosystem. The core function centers upon configuring and managing a group of related containers.
-
-Docker Swarm is the scheduling component of the Docker ecosystem. The core function centers upon determining where to place the containers within the cluster of Docker hosts (a physical computer system or a virtual machine running Linux).
+Docker Swarm was the scheduling component of the Docker ecosystem. The core function centers upon determining where to place the containers within the cluster of Docker hosts (a physical computer system or a virtual machine running Linux).
 
 The advantages of Docker Swarm become quite evident when there is a cluster of hundreds/thousands of servers. Presuming that this paradigm equates to hundreds/thousands of container, wherein each container encapsulates a service, which might be utilized by any number of applications, the question becomes how these containers should be optimally distributed thoughout the cluster. Among other considerations, some containers are more intricately linked to other containers, and this begets the question of whether these containers should be co-located on certain Docker hosts or, at the very least, be in close proximity. These optimization problems reside within the rubric of the scheduling component, which is performed by Docker Swarm.
 
