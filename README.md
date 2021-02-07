@@ -1,6 +1,6 @@
-# Docker Swarm, Docker Compose #
+# Docker Compose, Swarm #
 
-Docker Swar Compose (DSC) should be unpacked into its constituent components. Whereas Docker run can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be clear, Docker Compose can be more efficient than using Docker run, particularly when there might be a plethora of containers to start up.
+Whereas Docker run can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be clear, Docker Compose can be more efficient than using Docker run, particularly when there might be a plethora of containers to start up.
 
 Monolithic applications have been restructured as microservices application, wherein each microservice has a different logical function for the involved application. The microservices reside in containers (packages that include everything needed to run). Docker and Kubernetes have been the more popular of the container orchestration frameworks to handle multiple containers.
 
