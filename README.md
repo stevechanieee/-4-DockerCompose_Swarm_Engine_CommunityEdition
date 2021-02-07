@@ -14,7 +14,7 @@ The advantages of Docker Swarm become quite evident when there is a cluster of h
 
 For the purposes of disambiguation, please note that Docker Swarm is distinct and disparate from Swarmkit. For convenience, please find the distinctions below:
 
-Docker Swarm (a.k.a. Classic Swarm or Swarm Class standalone) refers to the older (2014 initial release) native clustering system for Docker. It serves to connect Docker hosts and turn them into a single, virtual host (via an API). As note by this page, https://github.com/docker/classicswarm, it "has been archived and is no longer actively developed. You may want to use the Swarm mode built into the Docker Engine instead, or another orchestration system."
+Docker Swarm (a.k.a. Classic Swarm or Swarm Class standalone) refers to the older (2014 initial release) native clustering system for Docker. It serves to connect Docker hosts and turn them into a single, virtual host (via an Application Programming Interface or API). As note by this page, https://github.com/docker/classicswarm, it "has been archived and is no longer actively developed. You may want to use the Swarm mode built into the Docker Engine instead, or another orchestration system."
 
 *Source: https://github.com/docker/classicswarm*
 
