@@ -1,4 +1,4 @@
-# Docker Compose, Swarm #
+# Docker Compose, Swarm, Engine, Community Edition #
 
 Whereas the utilization of *docker run* can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be clear, Docker Compose can be more efficient than using *docker run*, particularly when there might be a plethora of containers to start up.
 
