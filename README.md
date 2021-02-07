@@ -16,7 +16,7 @@ Docker Swarm is the scheduling component of the Docker ecosystem. Scheduling inv
 
  You can have a cluster of hundreds of servers, and you may have hundreds of containers, each encapsulating a service for a dozen different applications. Now how should these containers be distributed across your cluster of hundreds of servers, should some containers be placed only on certain hosts because they satisfy a particular criteria or maybe they should be closer to (or not) other containers which are somehow related... all these are part of the scheduling component which is performed by docker Swarm.
 
-
+provides native clustering functionality for Docker containers, which turns a group of Docker engines into a single virtual Docker engine.[55] In Docker 1.12 and higher, Swarm mode is integrated with Docker Engine
 
 docker-compose: Command used to configure and manage a group of related containers. It is a frontend to the same api's used by the docker cli, so you can reproduce it's behavior with commands like docker run.
 docker-compose.yml: Definition file for a group of containers, used by docker-compose and now also by swarm mode.
