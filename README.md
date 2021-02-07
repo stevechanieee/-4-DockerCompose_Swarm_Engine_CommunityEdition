@@ -1,5 +1,9 @@
 # Docker Compose, Swarm, Engine, Community Edition #
 
+The distinction between Kubernetes and Docker was previously discussed.
+
+*Source: https://thenewstack.io/kubernetes-vs-docker-swarm-whats-the-difference/*
+
 Whereas the utilization of *docker run* can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be axiomatic, Docker Compose can be more efficient than using *docker run*, particularly when there might be a plethora of containers to start up.
 
 In contemporary times, monolithic applications have been restructured as microservices applications, wherein each microservice has a different logical function for the involved application. The microservices reside in containers (packages that include everything needed to run). Historically, Docker and Kubernetes have been the more popular of the container orchestration frameworks to handle multiple containers. Also, historically, Docker was a set of components. Among these, there were two core tool components: (1) Docker Compose, and (2) Docker Swarm.
@@ -20,9 +24,9 @@ Docker Swarm (a.k.a. Classic Swarm or Swarm Class standalone) refers to the olde
 
 Swarmkit is a cluster management and orchestration feature (2016 initial release), which stemmed from Docker's acquisition of Software-Defined Networking (SDN) technology firm SocketPlane in March 2015. Swarmkit has been available in Docker Engine v1.12 and higher.
 
-*Source: https://stackoverflow.com/questions/38474424/the-relation-between-docker-swarm-and-docker-swarmkit?answertab=active#tab-top*
-*Source: https://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/*
-*Source: https://www.businesswire.com/news/home/20150304005595/en/Docker-Acquires-SocketPlane-to-Drive-an-Open-Collaborative-Networking-Ecosystem*
+*Source: https://stackoverflow.com/questions/38474424/the-relation-between-docker-swarm-and-docker-swarmkit?answertab=active#tab-top*</br>
+*Source: https://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/*</br>
+*Source: https://www.businesswire.com/news/home/20150304005595/en/Docker-Acquires-SocketPlane-to-Drive-an-Open-Collaborative-Networking-Ecosystem*</br>
 
 For convenience, please find the Docker Engine release versions below in Table 1: 
 
@@ -98,14 +102,14 @@ For convenience, please find the Docker Engine release versions below in Table 1
 
 It should be noted that, not shown in Table 1, Docker Engine release versions actually commence at 0.1.0 with a release date of 3-23-13. Table 1 only shows back to v1.11 for the purposes of delineating the inflection point between v1.11 and v1.12, as it should be noted that for v1.12 and higher, Swarm mode is integrated with Docker Engine. In addition, the Docker Engine documentation notes that "Docker CE 17.11 is the first Docker release based on containerd 1.0 beta. Docker CE 17.11 and later don’t recognize containers started with previous Docker versions. If using Live Restore, you must stop all containers before upgrading to Docker CE 17.11. If you don’t, any containers started by Docker versions that predate 17.11 aren’t recognized by Docker after the upgrade and keep running, un-managed, on the system." Finally, it should be noted that Docker Engine was renamed to Docker Community Edition (Docker CE) in March 2017. Before March 2017, the latest version of Docker that was available at the time was v1.13. After the rollout of Docker CE (with the simultaneous rollout of Docker Enterprise Edition, which will be considered out-of-scope for this thread), the release version number jumped to 17.03.
 
-*Source: https://docs.docker.com/engine/release-notes/17.11/*
-*Source: https://boxboat.com/2018/12/07/docker-ce-vs-docker-ee/*
+*Source: https://docs.docker.com/engine/release-notes/17.11/*</br>
+*Source: https://boxboat.com/2018/12/07/docker-ce-vs-docker-ee/*</br>
 
 
 
 
 
-*Source: https://thenewstack.io/kubernetes-vs-docker-swarm-whats-the-difference/*
+
 
 
 
