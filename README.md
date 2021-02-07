@@ -111,7 +111,7 @@ While container images can indeed be built with tools, such as Kaniko (an open s
 
 ### Interim Findings ###
 
-* Likely, Docker Compose and Docker CE will remain 
+* Likely, Docker Compose will remain useful, particularly as pertains to Docker images for GNU Octave, and Docker Swarm may have an edge from a cyber vantage point; more exploration/investigations will follow.
 
 
 
