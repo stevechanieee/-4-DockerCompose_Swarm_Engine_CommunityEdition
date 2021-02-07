@@ -1,10 +1,16 @@
-You're correct docker-compose is to bring up multi-container applications. Earlier you used to do docker run .. to start every container. Usually modern applications embracing the micro-services paradigm can be made up of dozens of services and using docker run .. will get very tiresome very soon. Hence docker-compose allows you to express all the containers and their properties and how they connect to each other as a yaml or json file so you can manage it in an easier fashion.
+# Swarm Compose #
 
-So, docker-compose is the container orchestration part in the docker ecosystem.
+Whereas Docker run can indeed start up a container, Docker Compose can be utilized to start up multi-container applications. As should be clear, Docker Compose can be more efficient than using Docker run, particularly when there might be a plethora of containers to start up.
 
-Links are different, they are just a part of docker-compose or docker run commands and are deprecated in favor of software defined networks of which overlay networks are just one of them.
+Monolithic applications have been restructured as microservices application, wherein each microservice has a different logical function for the involved application. The microservices reside in containers (packages that include everything needed to run). Docker and Kubernetes have been the more popular of the container orchestration frameworks to handle multiple containers.
 
-Swarm is the scheduling component in docker. What is scheduling - it is nothing but figuring out where to "place" your containers in your cluster of docker hosts. You can have a cluster of hundreds of servers, and you may have hundreds of containers, each encapsulating a service for a dozen different applications. Now how should these containers be distributed across your cluster of hundreds of servers, should some containers be placed only on certain hosts because they satisfy a particular criteria or maybe they should be closer to (or not) other containers which are somehow related... all these are part of the scheduling component which is performed by docker Swarm.
+Docker is a set of components. Among these, there are two tool components: (1) Docker Compose, and (2) Docker Swarm.
+
+Docker Compose is the container orchestration component of the Docker ecosystem. Container orchestration involves configuring and managing a group of related containers.
+
+Docker Swarm is the scheduling component of the Docker ecosystem. Scheduling involves determining where to place the containers within the cluster of Docker hosts.
+
+ You can have a cluster of hundreds of servers, and you may have hundreds of containers, each encapsulating a service for a dozen different applications. Now how should these containers be distributed across your cluster of hundreds of servers, should some containers be placed only on certain hosts because they satisfy a particular criteria or maybe they should be closer to (or not) other containers which are somehow related... all these are part of the scheduling component which is performed by docker Swarm.
 
 
 
