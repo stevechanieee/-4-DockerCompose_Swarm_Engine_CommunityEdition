@@ -26,9 +26,9 @@ Swarmkit is a cluster management and orchestration feature (2016 initial release
 
 For convenience, please find the Docker Engine release versions below in Table 1: 
 
-### Table 1: Docker Community Edition/Docker Engine/Docker Swarm Release Version Information ###
+### Table 1: Docker Community Edition (as of March 2017)/Docker Engine Version Information ###
 
-| Docker Engine Major Release Version | Minor Release Version | Release Date |
+| Docker Major Release Version | Minor Release Version | Release Date |
 |--------------------------------------|-----------------------|--------------|
 | 19.03                                | 19.03.15              | 2/1/21       |
 |                                      | 19.03.14              | 12/1/20      |
@@ -78,32 +78,28 @@ For convenience, please find the Docker Engine release versions below in Table 1
 |                                      | 17.06.0-ce            | 6/28/17      |
 | 17.05                                | 17.05.0-ce            | 5/4/17       |
 | 17.04                                | 17.04.0-ce            | 4/5/17       |
-| 17.03                                | 17.03.3-ce            | 8/30/18      |
-|                                      | 17.03.2-ce            | 5/29/17      |
-|                                      | 17.03.1-ce            | 3/27/17      |
-|                                      | 17.03.0-ce            | 3/1/17       |
+| **17.03**                                | **17.03.3-ce**            | 8/30/18      |
+|                                      | **17.03.2-ce**            | 5/29/17      |
+|                                      | **17.03.1-ce **           | 3/27/17      |
+|                                      | **17.03.0-ce**            | 3/1/17       |
 | 1.13                                 | 1.13.1                | 2/8/17       |
 |                                      | 1.13.0                | 1/18/17      |
-| 1.12                                 | 1.12.6                | 1/10/17      |
-|                                      | 1.12.5                | 12/15/16     |
-|                                      | 1.12.4                | 12/12/16     |
-|                                      | 1.12.3                | 10/26/16     |
-|                                      | 1.12.2                | 10/11/16     |
-|                                      | 1.12.1                | 8/18/16      |
-|                                      | 1.12.0                | 7/28/16      |
+| **1.12**                                 | **1.12.6**                | 1/10/17      |
+|                                      | **1.12.5**                | 12/15/16     |
+|                                      | **1.12.4**                | 12/12/16     |
+|                                      | **1.12.3**                | 10/26/16     |
+|                                      | **1.12.2**                | 10/11/16     |
+|                                      | **1.12.1**                | 8/18/16      |
+|                                      | **1.12.0**                | 7/28/16      |
 | 1.11                                 | 1.11.2                | 5/31/16      |
 |                                      | 1.11.0                | 4/13/16      |
-| 1.1                                  | 1.10.3                | 3/10/16      |
-|                                      | 1.10.2                | 2/22/16      |
-|                                      | 1.10.1                | 2/11/16      |
-|                                      | 1.10.0                | 2/4/16       |
 
 *Source: https://docs.docker.com/engine/release-notes/19.03/*
 
-It should be noted that for v1.12 and higher, Swarm mode is integrated with Docker Engine. In addition, the documentation notes that "Docker CE 17.11 is the first Docker release based on containerd 1.0 beta. Docker CE 17.11 and later don’t recognize containers started with previous Docker versions. If using Live Restore, you must stop all containers before upgrading to Docker CE 17.11. If you don’t, any containers started by Docker versions that predate 17.11 aren’t recognized by Docker after the upgrade and keep running, un-managed, on the system." Finally, Docker Engine was renamed to Docker Community Edition (Docker CE) in March 2017. Before March 2017, the latest version of Docker that was available at the time was v1.13. After the rollout of Docker CE (with the simultaneous rollout of Docker Enterprise Edition, which will not be discussed in this thread), the release version number jumped to 17.03.
+Docker Engine release versions start at 0.1.0 with a release date of 3-23-13. Table 1 shows back to v1.11 for the purposes of showing the iinflection point between v1.11 and v1.12, as it should be noted that for v1.12 and higher, Swarm mode is integrated with Docker Engine. In addition, the documentation notes that "Docker CE 17.11 is the first Docker release based on containerd 1.0 beta. Docker CE 17.11 and later don’t recognize containers started with previous Docker versions. If using Live Restore, you must stop all containers before upgrading to Docker CE 17.11. If you don’t, any containers started by Docker versions that predate 17.11 aren’t recognized by Docker after the upgrade and keep running, un-managed, on the system." Finally, Docker Engine was renamed to Docker Community Edition (Docker CE) in March 2017. Before March 2017, the latest version of Docker that was available at the time was v1.13. After the rollout of Docker CE (with the simultaneous rollout of Docker Enterprise Edition, which will not be discussed in this thread), the release version number jumped to 17.03.
 
 *Source: https://docs.docker.com/engine/release-notes/17.11/*
-
+*Source: https://boxboat.com/2018/12/07/docker-ce-vs-docker-ee/*
 
 
 
@@ -119,15 +115,3 @@ Docker Swarm Mode refers to the which are now built into Docker itself to allow 
 
 
 
-
-provides native clustering functionality for Docker containers, which turns a group of Docker engines into a single virtual Docker engine.[55] 
-
-docker-compose: Command used to configure and manage a group of related containers. It is a frontend to the same api's used by the docker cli, so you can reproduce it's behavior with commands like docker run.
-docker-compose.yml: Definition file for a group of containers, used by docker-compose and now also by swarm mode.
-swarm mode: Used to manage a group of docker engines as a single entity and provide orchestration (constantly trying to correct any differences between the current state and the target state).
-service: One or more containers for the same image and configuration within swarm, multiple containers provide scalability.
-stack: One or more services within a swarm, these may be defined using a DAB or a docker-compose.yml file.
-bridge network: Network managed by a single docker engine where multiple containers may communicate with each other. You may have multiple networks managed by an engine, and containers can be attached to zero or more networks.
-overlay network: Similar to a bridge network but spanning multiple docker engines. These require a key/value store to maintain their state. Swarm mode provides this, but if swarm mode is disabled, you may also use etcd, consul, or zookeeper.
-links: a method to connect containers together that predates the bridged network. Its usage is no longer recommended.
-classic swarm: A predecessor to the integrated swarm mode that runs as a container, allows multiple engines to appear as one, but does not provide orchestration or include its own k/v store.
