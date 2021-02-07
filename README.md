@@ -10,6 +10,10 @@ Docker Compose is the container orchestration component of the Docker ecosystem.
 
 Docker Swarm is the scheduling component of the Docker ecosystem. Scheduling involves determining where to place the containers within the cluster of Docker hosts.
 
+
+*Source: https://thenewstack.io/kubernetes-vs-docker-swarm-whats-the-difference/*
+
+
  You can have a cluster of hundreds of servers, and you may have hundreds of containers, each encapsulating a service for a dozen different applications. Now how should these containers be distributed across your cluster of hundreds of servers, should some containers be placed only on certain hosts because they satisfy a particular criteria or maybe they should be closer to (or not) other containers which are somehow related... all these are part of the scheduling component which is performed by docker Swarm.
 
 
