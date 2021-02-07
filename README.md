@@ -34,7 +34,7 @@ For convenience, please find the Docker Engine release versions below in Table 1
 
 | Docker Major Release Version | Minor Release Version | Release Date |
 |--------------------------------------|-----------------------|--------------|
-| 19.03                                | 19.03.15              | 2/1/21       |
+| **19.03**                                | 19.03.15              | 2/1/21       |
 |                                      | 19.03.14              | 12/1/20      |
 |                                      | 19.03.13              | 9/16/20      |
 |                                      | 19.03.12              | 6/18/20      |
@@ -105,8 +105,13 @@ It should be noted that, not shown in Table 1, Docker Engine release versions ac
 *Source: https://docs.docker.com/engine/release-notes/17.11/*</br>
 *Source: https://boxboat.com/2018/12/07/docker-ce-vs-docker-ee/*</br>
 
+Should the Docker Engine, which incorporates Swarm mode as an inherent function, be desired (given that Docker is deprecated as of Kubernetes v1.20), then it should be noted that the Docker Engine (renamed Docker CE in 2017) current version number is 19.03.
 
+While container images can indeed be built with tools, such as Kaniko (an open source tool for building container images from a Dockerfile), Podman, Buildah, and Buildkit, etc., Docker images may be more prevalent for certain facets of the architectural stack (e.g., GNU Octave). Indeed, prior GNU Octave-related experimentation was performed using Docker (e.g., https://github.com/epfl-sti/octave-x11-novnc-docker), and a plethora of ther repositories are also available (e.g., https://hub.docker.com/r/mtmiller/octave).
 
+### Interim Findings ###
+
+* Likely, Docker Compose and Docker CE will remain 
 
 
 
