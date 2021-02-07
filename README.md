@@ -18,9 +18,11 @@ Docker Swarm (a.k.a. Classic Swarm or Swarm Class standalone) refers to the olde
 
 *Source: https://github.com/docker/classicswarm*
 
-Swarmkit is a cluster management and orchestration feature (2016 initial release), which stemmed from Docker's acquisition of Software-Defined Networking (SDN) technology firm SocketPlane. Swarmkit has been available in Docker Engine v1.12 or higher.
+Swarmkit is a cluster management and orchestration feature (2016 initial release), which stemmed from Docker's acquisition of Software-Defined Networking (SDN) technology firm SocketPlane in March 2015. Swarmkit has been available in Docker Engine v1.12 and higher.
 
+*Source: https://stackoverflow.com/questions/38474424/the-relation-between-docker-swarm-and-docker-swarmkit?answertab=active#tab-top*
 *Source: https://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/*
+*Source: https://www.businesswire.com/news/home/20150304005595/en/Docker-Acquires-SocketPlane-to-Drive-an-Open-Collaborative-Networking-Ecosystem*
 
 For convenience, please find the Docker Engine release versions below in Table 1: 
 
@@ -94,17 +96,10 @@ For convenience, please find the Docker Engine release versions below in Table 1
 
 *Source: https://docs.docker.com/engine/release-notes/19.03/*
 
-Docker Engine release versions start at 0.1.0 with a release date of 3-23-13. Table 1 shows back to v1.11 for the purposes of showing the iinflection point between v1.11 and v1.12, as it should be noted that for v1.12 and higher, Swarm mode is integrated with Docker Engine. In addition, the documentation notes that "Docker CE 17.11 is the first Docker release based on containerd 1.0 beta. Docker CE 17.11 and later don’t recognize containers started with previous Docker versions. If using Live Restore, you must stop all containers before upgrading to Docker CE 17.11. If you don’t, any containers started by Docker versions that predate 17.11 aren’t recognized by Docker after the upgrade and keep running, un-managed, on the system." Finally, Docker Engine was renamed to Docker Community Edition (Docker CE) in March 2017. Before March 2017, the latest version of Docker that was available at the time was v1.13. After the rollout of Docker CE (with the simultaneous rollout of Docker Enterprise Edition, which will not be discussed in this thread), the release version number jumped to 17.03.
+It should be noted that, not shown in Table 1, Docker Engine release versions actually commence at 0.1.0 with a release date of 3-23-13. Table 1 only shows back to v1.11 for the purposes of delineating the inflection point between v1.11 and v1.12, as it should be noted that for v1.12 and higher, Swarm mode is integrated with Docker Engine. In addition, the Docker Engine documentation notes that "Docker CE 17.11 is the first Docker release based on containerd 1.0 beta. Docker CE 17.11 and later don’t recognize containers started with previous Docker versions. If using Live Restore, you must stop all containers before upgrading to Docker CE 17.11. If you don’t, any containers started by Docker versions that predate 17.11 aren’t recognized by Docker after the upgrade and keep running, un-managed, on the system." Finally, it should be noted that Docker Engine was renamed to Docker Community Edition (Docker CE) in March 2017. Before March 2017, the latest version of Docker that was available at the time was v1.13. After the rollout of Docker CE (with the simultaneous rollout of Docker Enterprise Edition, which will be considered out-of-scope for this thread), the release version number jumped to 17.03.
 
 *Source: https://docs.docker.com/engine/release-notes/17.11/*
 *Source: https://boxboat.com/2018/12/07/docker-ce-vs-docker-ee/*
-
-
-
-Docker Swarm Mode refers to the which are now built into Docker itself to allow you to initiate a new Swarm and deploy tasks (which are Docker containers in this case, but don't have to be, see Swarmkit above) to that cluster.
-
-*Source: https://stackoverflow.com/questions/38474424/the-relation-between-docker-swarm-and-docker-swarmkit?answertab=active#tab-top*
-
 
 
 
